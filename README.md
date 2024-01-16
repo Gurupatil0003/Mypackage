@@ -12,43 +12,41 @@ mypackage/
 |-- setup.py
 ```
 
-Create a Project Directory:
-
-bash
-Copy code
+```python
 mkdir mypackage
 cd mypackage
-Create the mypackage Directory Inside:
 
-bash
-Copy code
+```
+
+```python
 mkdir mypackage
-Create Modules Inside mypackage:
 
-bash
-Copy code
+```
+
+```python
 touch mypackage/module1.py
 touch mypackage/module2.py
-module1.py content:
 
-python
-Copy code
+```
+
+
+```python
 def my_function():
     print("Hello from module1")
-Create an __init__.py File Inside mypackage:
 
-bash
-Copy code
+```
+
+```python
 touch mypackage/__init__.py
-Create a setup.py File in the Main Directory:
 
-bash
-Copy code
+```
+
+```python
 touch setup.py
-setup.py content:
 
-python
-Copy code
+```
+
+```python
 from setuptools import setup, find_packages
 
 setup(
@@ -56,43 +54,45 @@ setup(
     version='0.1',
     packages=find_packages(),
 )
-Create a README.md File for Documentation:
 
-bash
-Copy code
+```
+
+```python
 touch README.md
-Install setuptools and wheel:
 
-bash
-Copy code
+```
+
+```python
 pip install setuptools wheel
-Build and Install Your Package:
 
-bash
-Copy code
+```
+
+
+```python
 python setup.py sdist bdist_wheel
 pip install .
-Test Your Package:
-Create a test script (test_script.py):
 
-python
-Copy code
+```
+
+```python
 from mypackage import module1
 
 module1.my_function()
-Run the test script:
 
-bash
-Copy code
+```
+
+
+```python
 python test_script.py
-Output:
 
-csharp
-Copy code
+```
+
+```python
+output:-
 Hello from module1
-This method follows a more organized project structure and includes a separate directory for the package code. It also allows for easy inclusion of additional files, documentation, and tests.
 
+```
 
+```python
 
-
-
+```
