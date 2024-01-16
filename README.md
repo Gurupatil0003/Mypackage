@@ -2,7 +2,7 @@
 Certainly! Let's go through another method using a more structured layout and incorporating best practices for creating Python packages. We'll use a project structure that includes separate directories for source code, tests, and documentation.
 
 #Project Structure
-
+```python
 mypackage/
 |-- mypackage/
 |   |-- __init__.py
@@ -10,7 +10,7 @@ mypackage/
 |   |-- module2.py
 |-- README.md
 |-- setup.py
-
+```
 
 Create a Project Directory:
 
